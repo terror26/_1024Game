@@ -12,28 +12,7 @@ public class Coding {
 		_1024Game.playGame();
 		System.out.println("Ending Game");
 	}
-
-	public int strStr(String haystack, String needle) {
-		for (int i = 0; i < haystack.length(); i++) {
-			if (haystack.charAt(i) == needle.charAt(0)) {
-				boolean notMatch = false;
-				for (int j = 0; j < haystack.length(); j++) {
-					if (j + i >= needle.length()) {
-						break;
-					}
-					if (haystack.charAt(j + i) != needle.charAt(j)) {
-						notMatch = true;
-						break;
-					}
-				}
-				if (notMatch == false) {
-					return i;
-				}
-			}
-		}
-		return -1;
-	}
-
+	
 	static class _1024Game {
 		static int[][] dp;
 		static int[][] tmp;
